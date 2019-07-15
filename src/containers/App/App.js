@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from '../../assets/images/logo_dark.png';
 import './App.css';
+import Typography from '@material-ui/core/Typography';
+import Logo from '../../components/Logo';
+import Link from '@material-ui/core/Link';
 
 function App() {
+  const linkinUrl = 'https://www.linkedin.com/in/freelancecliff/';
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is my portfolio
-        </p>
-        <a href="https://www.linkedin.com/in/freelancecliff/">linkedin</a>
+        <Logo />
+        <Typography variant="h1" component="h2" gutterBottom>
+          Viking of the Binary Seas
+        </Typography>
+        <Typography variant="subtitle1">
+          <Link href={linkinUrl} color="secondary" target="_blank" rel="noopener">
+            linkedin
+          </Link>
+        </Typography>
       </header>
     </div>
   );
