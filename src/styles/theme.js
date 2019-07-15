@@ -2,8 +2,6 @@ import { red } from '@material-ui/core/colors';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { Montserrat, MontserratSemiBold, MontserratThin } from './fonts';
 
-console.log('Montserrat', Montserrat);
-
 // A custom theme for this app
 const theme = createMuiTheme({
   typography: {
